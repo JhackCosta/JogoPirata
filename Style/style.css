@@ -1,0 +1,109 @@
+* {
+    font-family: 'Pirata One', cursive;
+}
+
+body {
+    margin: auto;
+    background-image: url("../imagens/mapa-cropped.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cabecalho {
+    color: rgb(0, 0, 0);
+    width: 50%;
+    margin-left: 24%;
+    display: flex;
+    font-size: large;
+    justify-content: center;
+    background-color: rgba(238, 168, 55, 0.795);
+    border-radius: 50px;
+}
+
+h1::before {
+    content: "☠️";
+}
+
+h1::after {
+    content: "☠️";
+}
+
+.introducao {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    background-color: rgba(238, 168, 55, 0.795);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.nome {
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    margin-left: 1cm;
+}
+
+.escolha {
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    margin-left: 2cm;
+    text-decoration: none;
+}
+
+.escolha:hover {
+    color: rgb(255, 255, 255);
+}
+
+.fundo {
+    height: 400px;
+    background-color: rgba(238, 168, 55, 0.795);
+    border-radius: 50px;
+}
+
+.personagem {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.botao {
+    text-decoration: wavy;
+}
+
+#rodaPe {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+    .introducao {
+        display: none;
+    }
+    .cabecalho {
+        display: none;
+    }
+    .fundo {
+        height: 68em;
+        display: flex;
+        justify-content: center;
+    }
+    .personagem {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5em;
+    }
+    .sumir {
+        display: none;
+    }
+    #rodaPe {
+        display: flex;
+        justify-content: center;
+        margin-right: 3.5em;
+    }
+}
